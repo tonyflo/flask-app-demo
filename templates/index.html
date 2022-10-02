@@ -1,6 +1,10 @@
 <html>
     <body>
         <h1>Let's go climb a mountain!</h1>
-	<p>{{ mountain }}</p>
+	<ul>
+        {% for mt in mountain %}
+        <li>{{ mt }}</li>
+        {% endfor %}
+        </ul>
     </body>
 </html>
