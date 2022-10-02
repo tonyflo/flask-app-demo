@@ -5,6 +5,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.html', mountain='Everest')
 
 app.run(host='0.0.0.0', port=80)
