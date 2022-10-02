@@ -3,7 +3,7 @@
         <h1>Let's go climb a mountain!</h1>
 	<ul>
         {% for mt in mountain %}
-        <li>{{ mt }}</li>
+	<li><a href="/mountain/{{ mt }}">{{ mt }}</a></li>
         {% endfor %}
         </ul>
     </body>

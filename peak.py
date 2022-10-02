@@ -8,4 +8,9 @@ def index():
     mountains = ['Everest', 'K2', 'Kilimanjaro']
     return render_template('index.html', mountain=mountains)
 
+@app.route('/mountain/<mt>')
+def mountain(mt):
+    return "This is " + str(mt)
+
+
 app.run(host='0.0.0.0', port=80)
